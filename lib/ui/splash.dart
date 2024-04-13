@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:spotify/app/size_utils.dart';
 import 'package:spotify/ui/home.dart';
 
 class Splashscreen extends StatefulWidget {
@@ -26,8 +27,8 @@ class _SplashscreenState extends State<Splashscreen> {
         body: Center(
           child: Image.asset(
             'assets/images/splash2.png',
-            height: 100,
-            width: 200,
+            height: 100.v,
+            width: 200.h,
             fit: BoxFit.fill,
           ),
         ));

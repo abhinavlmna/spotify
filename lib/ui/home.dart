@@ -89,236 +89,245 @@ class _HomeScreenState extends State<HomeScreen> {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Row(
-              children: [
-                SizedBox(
-                  width: 10.h,
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Myplaylist()));
-                  },
-                  child: Container(
-                    // color: Colors.blue,
-                    height: 70.v,
-                    width: 190.h,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.brown),
-                    child: Stack(
-                      children: [
-                        Positioned(
-                            left: 5.h,
-                            child: Image.asset(
-                              'assets/images/guppy.png',
-                              height: 69.v,
-                              width: 60.h,
-                              fit: BoxFit.fill,
-                            )),
-                        Positioned(
-                            left: 80.h,
-                            top: 20.v,
-                            child: Text(
-                              'Sleep',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
-                            ))
-                      ],
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  width: 10.h,
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Myplaylist()));
-                  },
-                  child: Container(
-                    // color: Colors.blue,
-                    height: 70.v,
-                    width: 190.h,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.brown),
-                    child: Stack(
-                      children: [
-                        Positioned(
-                            left: 5.h,
-                            child: Image.asset(
-                              'assets/images/90s.png',
-                              height: 68.v,
-                              width: 80.h,
-                              fit: BoxFit.fill,
-                            )),
-                        Positioned(
-                            left: 90.h,
-                            top: 20.v,
-                            child: Text(
-                              '90 s love',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
-                            ))
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 10.v,
-            ),
-            Row(
-              children: [
-                SizedBox(
-                  width: 10.v,
-                ),
-                Container(
-                  // color: Colors.blue,
-                  height: 70.v,
-                  width: 190.h,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.brown),
-                  child: Stack(
+            Container(
+              height: 250.v,
+              width: 360.h,
+              child: Column(
+                children: [
+                  Row(
                     children: [
-                      Positioned(
-                          left: 5.h,
-                          child: Image.asset(
-                            'assets/images/yesudas.png',
-                            height: 65.v,
-                            width: 63.h,
-                            fit: BoxFit.fill,
-                          )),
-                      Positioned(
-                          left: 80.h,
-                          top: 20.v,
-                          child: Text(
-                            'Yesudas',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ))
+                      SizedBox(
+                        width: 10.h,
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Myplaylist()));
+                        },
+                        child: Container(
+                          // color: Colors.blue,
+                          height: 70.v,
+                          width: 165.h,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.brown),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                  left: 5.h,
+                                  child: Image.asset(
+                                    'assets/images/guppy.png',
+                                    height: 69.v,
+                                    width: 60.h,
+                                    fit: BoxFit.fill,
+                                  )),
+                              Positioned(
+                                  left: 80.h,
+                                  top: 20.v,
+                                  child: Text(
+                                    'Sleep',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ))
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10.h,
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Myplaylist()));
+                        },
+                        child: Container(
+                          // color: Colors.blue,
+                          height: 70.v,
+                          width: 165.h,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.brown),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                  left: 5.h,
+                                  child: Image.asset(
+                                    'assets/images/90s.png',
+                                    height: 68.v,
+                                    width: 80.h,
+                                    fit: BoxFit.fill,
+                                  )),
+                              Positioned(
+                                  left: 90.h,
+                                  top: 20.v,
+                                  child: Text(
+                                    '90 s love',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ))
+                            ],
+                          ),
+                        ),
+                      ),
                     ],
                   ),
-                ),
-                SizedBox(
-                  width: 10.h,
-                ),
-                Container(
-                  // color: Colors.blue,
-                  height: 70.v,
-                  width: 190.h,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.brown),
-                  child: Stack(
+                  SizedBox(
+                    height: 10.v,
+                  ),
+                  Row(
                     children: [
-                      Positioned(
-                          left: 5.h,
-                          child: Image.asset(
-                            'assets/images/rahman.png',
-                            height: 68.v,
-                            width: 80.h,
-                            fit: BoxFit.fill,
-                          )),
-                      Positioned(
-                          left: 90.h,
-                          top: 20.v,
-                          child: Text(
-                            'A.R Rahman',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ))
+                      SizedBox(
+                        width: 10.v,
+                      ),
+                      Container(
+                        // color: Colors.blue,
+                        height: 70.v,
+                        width: 165.h,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.brown),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                                left: 5.h,
+                                child: Image.asset(
+                                  'assets/images/yesudas.png',
+                                  height: 65.v,
+                                  width: 63.h,
+                                  fit: BoxFit.fill,
+                                )),
+                            Positioned(
+                                left: 80.h,
+                                top: 20.v,
+                                child: Text(
+                                  'Yesudas',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ))
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10.h,
+                      ),
+                      Container(
+                        // color: Colors.blue,
+                        height: 70.v,
+                        width: 165.h,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.brown),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                                left: 5.h,
+                                child: Image.asset(
+                                  'assets/images/rahman.png',
+                                  height: 68.v,
+                                  width: 80.h,
+                                  fit: BoxFit.fill,
+                                )),
+                            Positioned(
+                                left: 90.h,
+                                top: 20.v,
+                                child: Text(
+                                  'A.R Rahman',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ))
+                          ],
+                        ),
+                      ),
                     ],
                   ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 10.v,
-            ),
-            Row(
-              children: [
-                SizedBox(
-                  width: 10.h,
-                ),
-                Container(
-                  // color: Colors.blue,
-                  height: 70.v,
-                  width: 190.h,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.brown),
-                  child: Stack(
+                  SizedBox(
+                    height: 10.v,
+                  ),
+                  Row(
                     children: [
-                      Positioned(
-                          left: 5.h,
-                          child: Image.asset(
-                            'assets/images/vidyaji.png',
-                            height: 65.v,
-                            width: 63.h,
-                            fit: BoxFit.fill,
-                          )),
-                      Positioned(
-                          left: 80.h,
-                          top: 20.v,
-                          child: Text(
-                            'Vidyasagar',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ))
+                      SizedBox(
+                        width: 10.h,
+                      ),
+                      Container(
+                        // color: Colors.blue,
+                        height: 70.v,
+                        width: 165.h,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.brown),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                                left: 5.h,
+                                child: Image.asset(
+                                  'assets/images/vidyaji.png',
+                                  height: 65.v,
+                                  width: 63.h,
+                                  fit: BoxFit.fill,
+                                )),
+                            Positioned(
+                                left: 80.h,
+                                top: 20.v,
+                                child: Text(
+                                  'Vidyasagar',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ))
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10.h,
+                      ),
+                      Container(
+                        // color: Colors.blue,
+                        height: 70.v,
+                        width: 165.h,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.brown),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                                left: 5.h,
+                                child: Image.asset(
+                                  'assets/images/old.png',
+                                  height: 68.v,
+                                  width: 80.h,
+                                  fit: BoxFit.fill,
+                                )),
+                            Positioned(
+                                left: 90.h,
+                                top: 20.v,
+                                child: Text(
+                                  'Old classics',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ))
+                          ],
+                        ),
+                      ),
                     ],
                   ),
-                ),
-                SizedBox(
-                  width: 10.h,
-                ),
-                Container(
-                  // color: Colors.blue,
-                  height: 70.v,
-                  width: 190.h,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.brown),
-                  child: Stack(
-                    children: [
-                      Positioned(
-                          left: 5.h,
-                          child: Image.asset(
-                            'assets/images/old.png',
-                            height: 68.v,
-                            width: 80.h,
-                            fit: BoxFit.fill,
-                          )),
-                      Positioned(
-                          left: 90.h,
-                          top: 20.v,
-                          child: Text(
-                            'Old classics',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ))
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 20.v,
+                ],
+              ),
             ),
             Container(
               // color: Colors.blue,
